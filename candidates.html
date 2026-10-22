@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentBridge | Candidates</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="recruiters.html">TalentBridge</a>
+      <div>
+        <a href="recruiters.html">Recruiters</a>
+        <a href="candidates.html" aria-current="page">Candidates</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">CANDIDATES</p>
+      <h1>Your next opportunity starts here.</h1>
+      <p>
+        Introduce yourself, share your experience, and tell us
+        what you want from your next role. We help connect
+        your potential with employers seeking talent.
+      </p>
+      <a class="button" href="#candidate-form">Introduce yourself</a>
+    </section>
+
+    <section class="cards" aria-label="About TalentBridge">
+      <article class="card">
+        <h2>Who We Are</h2>
+        <p>
+          TalentBridge is a recruiting company focused on
+          helping people find meaningful work. We connect
+          candidates with employers and support a clear,
+          respectful recruiting experience.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>What We Offer</h2>
+        <p>
+          We help candidates share their skills, experience,
+          and career preferences with recruiters. Whether
+          you want a permanent role or a contract opportunity,
+          we help you take the next step.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Our Vision and Values</h2>
+        <p>
+          Our vision is a future where everyone can access
+          meaningful career opportunities. We value fairness,
+          inclusion, honesty, and respect for each person's
+          goals and experience.
+        </p>
+      </article>
+    </section>
+
+    <section class="form-section" id="candidate-form">
+      <h2>Tell Us About Yourself</h2>
+      <p>Fields marked with * are required.</p>
+
+      <!-- Connect this form to your backend to process submissions. -->
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="candidate-name">Full name *</label>
+            <input id="candidate-name" name="full_name"
+                   autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="candidate-email">Email address *</label>
+            <input type="email" id="candidate-email" name="email"
+                   autocomplete="email" required>
+          </div>
+
+          <div>
+            <label for="candidate-phone">Phone number</label>
+            <input type="tel" id="candidate-phone" name="phone"
+                   autocomplete="tel">
+          </div>
+
+          <div>
+            <label for="location">City and state</label>
+            <input id="location" name="location"
+                   placeholder="Dallas, Texas">
+          </div>
+
+          <div>
+            <label for="desired-role">Desired job title *</label>
+            <input id="desired-role" name="desired_role" required>
+          </div>
+
+          <div>
+            <label for="experience">Years of experience</label>
+            <input type="number" id="experience" name="experience"
+                   min="0" step="1">
+          </div>
+
+          <div>
+            <label for="work-preference">Work preference</label>
+            <select id="work-preference" name="work_preference">
+              <option value="">Select an option</option>
+              <option>Remote</option>
+              <option>Hybrid</option>
+              <option>On-site</option>
+              <option>Open to any arrangement</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="profile">LinkedIn or portfolio URL</label>
+            <input type="url" id="profile" name="profile"
+                   placeholder="https://">
+          </div>
+        </div>
+
+        <label for="candidate-details">Additional information</label>
+        <textarea id="candidate-details" name="details" rows="5"
+          placeholder="Tell us about your skills, qualifications, availability, and career goals."></textarea>
+
+        <p class="form-note">
+          Demo form: submission is not connected yet.
+        </p>
+        <button type="button" disabled>Submit Candidate Profile</button>
+      </form>
+    </section>
+
+    <p class="switch-page">
+      Hiring for your team?
+      <a href="recruiters.html">Visit our recruiter page →</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>TalentBridge · Connecting people with opportunity.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentBridge | Recruiters</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="recruiters.html">TalentBridge</a>
+      <div>
+        <a href="recruiters.html" aria-current="page">Recruiters</a>
+        <a href="candidates.html">Candidates</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">RECRUITERS & EMPLOYERS</p>
+      <h1>Great teams start with the right connection.</h1>
+      <p>
+        Tell us about your company and hiring needs.
+        We help connect you with candidates who bring the
+        skills and experience your team needs.
+      </p>
+      <a class="button" href="#recruiter-form">Find your next hire</a>
+    </section>
+
+    <section class="cards" aria-label="About TalentBridge">
+      <article class="card">
+        <h2>Who We Are</h2>
+        <p>
+          TalentBridge is a recruiting company that connects
+          employers with talented professionals. Our HRMS
+          platform helps organize hiring information and
+          supports meaningful connections.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>What We Offer</h2>
+        <p>
+          We help employers share job requirements, introduce
+          their organizations, and connect with candidates.
+          Our approach supports permanent, contract, and
+          temporary hiring needs.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Our Vision and Values</h2>
+        <p>
+          Our vision is to make hiring more accessible and
+          effective. We value integrity, inclusion, clear
+          communication, and respect for every employer
+          and candidate.
+        </p>
+      </article>
+    </section>
+
+    <section class="form-section" id="recruiter-form">
+      <h2>Tell Us About Your Hiring Needs</h2>
+      <p>Fields marked with * are required.</p>
+
+      <!-- Connect this form to your backend to process submissions. -->
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="recruiter-name">Full name *</label>
+            <input id="recruiter-name" name="full_name"
+                   autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="company">Company name *</label>
+            <input id="company" name="company"
+                   autocomplete="organization" required>
+          </div>
+
+          <div>
+            <label for="recruiter-email">Work email *</label>
+            <input type="email" id="recruiter-email" name="email"
+                   autocomplete="email" required>
+          </div>
+
+          <div>
+            <label for="recruiter-phone">Phone number</label>
+            <input type="tel" id="recruiter-phone" name="phone"
+                   autocomplete="tel">
+          </div>
+
+          <div>
+            <label for="job-title">Position you are hiring for *</label>
+            <input id="job-title" name="job_title" required>
+          </div>
+
+          <div>
+            <label for="employment-type">Employment type *</label>
+            <select id="employment-type" name="employment_type" required>
+              <option value="">Select an option</option>
+              <option>Full-time</option>
+              <option>Part-time</option>
+              <option>Contract</option>
+              <option>Temporary</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="hiring-details">Additional information</label>
+        <textarea id="hiring-details" name="details" rows="5"
+          placeholder="Describe required skills, location, salary range, and hiring timeline."></textarea>
+
+        <p class="form-note">
+          Demo form: submission is not connected yet.
+        </p>
+        <button type="button" disabled>Submit Hiring Request</button>
+      </form>
+    </section>
+
+    <p class="switch-page">
+      Looking for a job?
+      <a href="candidates.html">Visit our candidate page →</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>TalentBridge · Connecting people with opportunity.</p>
+  </footer>
+</body>
+</html>
